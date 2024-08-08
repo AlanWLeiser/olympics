@@ -1,87 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olympics</title>
-    <style>
-        body{
-            margin: 0;
-            padding:0;
-        }
-        .banner{
-            width: 100%;
-            height: 800px;
-            background: url("https://img.olympics.com/images/image/private/t_16-9_1280/f_auto/primary/ly9xuf0jwinrnmdrzmef");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            /* align-items: center; */
-        }
-        .banner div{
-            width: 100px;
-        }
-        .banner img{
-            width: 100%;
-            
-        }
-    </style>
-</head>
-<body>
-    <section class="banner">
-        <div>
-            <img src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg" alt="">
-        </div>
-    </section>
-    <section>
-        <table>
-            <thead>
-                <tr>
-                    <th >Posição</th>
-                    <th >País</th>
-                    <th >Ouro</th>
-                    <th >Prata</th>
-                    <th >Bronze</th>
-                    <th >Total</th>
-                  </tr>
-            </thead>
-            <tboby>
-                <tr>
-                    <td>1º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png" alt="">USA</td>
-                    <td>31</td>
-                    <td>31</td>
-                    <td>31</td>
-                    <td>86</td>
-                  </tr>
-                <tr>
-                    <td>2º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CHN.png" alt="">CHN</td>
-                    <td>22</td>
-                    <td>20</td>
-                    <td>16</td>
-                    <td>58</td>
-                  </tr>
-                <tr>
-                    <td>3º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/AUS.png" alt="">AUS</td>
-                    <td>14</td>
-                    <td>12</td>
-                    <td>09</td>
-                    <td>35</td>
-                  </tr>
-                <tr>
-                    <td>17º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png" alt="">BRA</td>
-                    <td>02</td>
-                    <td>05</td>
-                    <td>06</td>
-                    <td>13</td>
-                  </tr>
-            </tbody>
-        </table>
-    </section>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Raleway:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Olympics</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Roboto;
+            }
+            .banner {
+                width: 100%;
+                height: 400px;
+                background: url('https://img.olympics.com/images/image/private/t_16-9_1280/f_auto/primary/ly9xuf0jwinrnmdrzmef');
+                background-size: cover;
+                background-position: center 0%;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+            }
+            .banner div {
+                width: 90px;
+            }
+            .banner img {
+                width: 100%;
+            }
+            td {
+                width: 60px;
+                align-content: center;
+                text-align: center;
+            }
+            td img {
+                width: 15px;
+                margin: 2px;
+            }
+            .tableSection {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 50px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="banner">
+            <div>
+                <img src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg" alt="" />
+            </div>
+        </section>
+        <section class="tableSection">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>País</th>
+                        <th>Ouro</th>
+                        <th>Prata</th>
+                        <th>Bronze</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1º</td>
+                        <td>
+                            <img
+                                src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png"
+                                alt=""
+                            />USA
+                        </td>
+                        <td>27</td>
+                        <td>35</td>
+                        <td>33</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>2º</td>
+                        <td>
+                            <img
+                                src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CHN.png"
+                                alt=""
+                            />CHN
+                        </td>
+                        <td>26</td>
+                        <td>24</td>
+                        <td>17</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>3º</td>
+                        <td>
+                            <img
+                                src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/AUS.png"
+                                alt=""
+                            />AUS
+                        </td>
+                        <td>18</td>
+                        <td>14</td>
+                        <td>11</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>18º</td>
+                        <td>
+                            <img
+                                src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png"
+                                alt=""
+                            />BRA
+                        </td>
+                        <td>02</td>
+                        <td>05</td>
+                        <td>07</td>
+                        <td>14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
 </html>
