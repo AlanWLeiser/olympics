@@ -98,3 +98,66 @@ td img {
     margin: 2px;
 }
 ```
+
+#### Seção de Noticias
+
+- HTML
+
+```html 
+<section class="newsSection">
+    <div>
+        <div class="newsDiv">
+            <img
+                src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/wmzus3toeptpzkadrrdq"
+                alt=""
+            />
+            <div>
+                <h5>Titulo da notícia</h5>
+                <p>Descrição</p>
+                <a
+                    href="https://olympics.com/en/paris-2024/videos/images-of-the-day-day-12-olympic-games-paris-2024"
+                >
+                    <div class="buttonViewMore">
+                        <p>Ver mais</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+- CSS
+
+```css
+.newsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsDiv {
+    display: flex;
+}
+.newsDiv img {
+    width: 150px;
+}
+.newsDiv h5 {
+    font-size: 20px;
+}
+.newsDiv p {
+    font-size: 15px;
+    color: gray;
+}
+a {
+    text-decoration: none;
+}
+.buttonViewMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+}
+```
